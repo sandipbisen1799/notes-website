@@ -9,7 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function createnotes() {
     const notesContainer = document.querySelector('.container');
+    
     const noteBox = document.createElement('div');
+    
     noteBox.classList.add('notesbox');
 
     const inputBox = document.createElement('p');
@@ -31,6 +33,7 @@ function createnotes() {
     deleteButton.addEventListener('click', deleteNote);
 
     // Add event listener for saving notes on input
+    
     inputBox.addEventListener('input', saveNotes);
      buttonDiv.appendChild(saveButton);
     buttonDiv.appendChild(deleteButton);
